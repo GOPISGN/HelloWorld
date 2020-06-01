@@ -1,12 +1,11 @@
 pipeline {
-   agent any
-
-   stages {
-      stage('Pre-Requistic') {
-         steps {
-            echo "Check the python Version"
-            sh python --version
-         }
-      }
-   }
+    agent { docker { image 'python:3.5.1' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
+            }
+        }
+    }
 }
+
