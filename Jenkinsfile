@@ -6,9 +6,9 @@ pipeline {
          steps {
             script {
                bat 'echo "Check python version"'
-               ECHO OFF
-               IF NOT "%python --version%" == "Python 3.8.2"
-               ECHO "PASS"
+               bat 'ECHO OFF'
+               bat 'IF NOT "%python --version%" == "Python 3.8.2"'
+               bat 'ECHO "PASS"'
             }
          }
       }
