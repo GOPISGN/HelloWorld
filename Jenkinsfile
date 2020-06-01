@@ -1,11 +1,12 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
-            }
-        }
-    }
-}
+   agent any
 
+   stages {
+      stage('Pre-Requistic') {
+         steps {
+            echo "Check the python Version"
+            cd C:\Users\Dell\Documents\Gopi\Study\Python\Programs
+         }
+      }
+   }
+}
