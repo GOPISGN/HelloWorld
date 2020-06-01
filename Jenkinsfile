@@ -5,7 +5,9 @@ pipeline {
       stage('Pre-Requistic') {
          steps {
             echo "Check the python Version"
-            cd C:/Users/Dell/Documents/Gopi/Study/Python/Programs
+         }
+         steps {
+            cd C:\Users\Dell\Documents\Gopi\Devops\Sample-Project
          }
       }
    }
