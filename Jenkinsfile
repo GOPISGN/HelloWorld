@@ -1,6 +1,6 @@
 pipeline {
    agent any
-
+   python_version {}
    stages {
       stage('Pre-Requistic') {
          steps {
