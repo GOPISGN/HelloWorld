@@ -6,7 +6,7 @@ pipeline {
          steps {
             script {
                bat 'echo "Check python version"'
-               bat 'set python_version = python --version'
+               python_version = bat 'python --version'
                set python_version
             }
          }
