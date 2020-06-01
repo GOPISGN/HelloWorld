@@ -8,7 +8,9 @@ pipeline {
                bat 'echo "Check python version"'
                
                bat 'echo off'
-               bat 'if "%python --version%" == "Python 3.8.2"' echo "Python version is latest"
+               bat 'if "%python --version%" == "Python 3.8.2"' (
+                  echo "Python version is latest"
+                  )
                
                
             }
