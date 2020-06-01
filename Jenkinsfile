@@ -10,7 +10,7 @@ pipeline {
 				bat 'python --version'
 				bat 'echo "Python latest version is installed, up and running"'
 				bat 'echo on'
-				bat 'pwd'
+				bat 'cd'
 			}
 		}
                            
