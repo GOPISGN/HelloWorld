@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Pre-Requistic') {
          steps {
-            cmd-execc('echo "Check Python Version"')
+            cmd_exec('echo "Check Python Version"')
          }
       }
    }
