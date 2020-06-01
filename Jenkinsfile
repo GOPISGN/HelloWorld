@@ -2,10 +2,10 @@ pipeline {
    agent any
 
    stages {
-      stage('Hello') {
+      stage('Pre-Requistic') {
          steps {
-            cd C:\Users\Dell\Documents\Gopi\Study\Python\Programs
-            Hello.py
+            echo "Check the python Version"
+            python --version
          }
       }
    }
