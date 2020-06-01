@@ -4,7 +4,8 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
-            echo 'Hello World'
+            cd C:\Users\Dell\Documents\Gopi\Study\Python\Programs
+            Hello.py
          }
       }
    }
