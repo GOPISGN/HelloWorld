@@ -5,8 +5,8 @@ pipeline {
       stage('Pre-Requistic') {
          steps {
             bat 'echo "Check python version"'
-            bat 'python --version'
-            bat 'cd C:\\Users\\Dell\\Documents\\Gopi\\Devops\\Sample-Project'
+            python_version = bat 'python --version'
+            
          }
       }
    }
