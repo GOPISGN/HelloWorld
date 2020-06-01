@@ -13,17 +13,7 @@ pipeline {
             }
         }
       
-		stage('Stage 2 : Clone or Checkout the Master code repository from SCM') {
-			steps {
-				bat 'echo "Clone or checkout the master branch"'
-				bat 'git init'
-				bat 'git remote add origin https://github.com/GOPISGN/HelloWorld.git'
-				bat 'git fetch'
-				bat 'get checkout master'
-				bat 'echo "Clonning Successful"'
-            }
-        }
-		 
+
 		stage('Stage 3 : Run the Appliation') {
 			steps {
 				bat 'echo "Lets trigger the application"'
