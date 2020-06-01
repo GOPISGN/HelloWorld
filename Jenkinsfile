@@ -17,7 +17,7 @@ pipeline {
 		stage('Stage 3 : Run the Appliation') {
 			steps {
 				bat 'echo "Lets trigger the application"'
-				bat 'C:\\Program Files (x86)\\Jenkins\\workspace\\New Project\\Hello.py'
+				bat 'Hello.py'
 				bat 'echo "Application Run Successful"'
 			}
 		}
