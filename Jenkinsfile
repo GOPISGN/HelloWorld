@@ -7,7 +7,7 @@ pipeline {
             script {
                bat 'echo "Check python version"'
                python_version = bat 'python --version'
-               bat 'echo "${python_version}"
+               bat 'echo "${python_version}"'
             }
          }
       }
