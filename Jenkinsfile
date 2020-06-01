@@ -4,9 +4,10 @@ pipeline {
    stages {
       stage('Pre-Requistic') {
          steps {
-            bat 'echo "Check python version"'
-            python_version = bat 'python --version'
-            
+            script {
+               bat 'echo "Check python version"'
+               python_version = bat 'python --version'
+            }
          }
       }
    }
