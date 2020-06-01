@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Pre-Requistic') {
          steps {
-            bat 'set'
+            bat 'echo "Check python version"'
          }
       }
    }
