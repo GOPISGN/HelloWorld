@@ -5,7 +5,7 @@ pipeline {
       stage('Pre-Requistic') {
          steps {
             echo "Check the python Version"
-            
+            sh python --version
          }
       }
    }
