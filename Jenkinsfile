@@ -28,7 +28,7 @@ pipeline {
 				bat 'pwd'
 				bat 'echo "Lets trigger the application"'
 				bat 'Hello.py'
-				bat 'echo "Application Run Successful"
+				bat 'echo "Application Run Successful"'
 			}
 		}
       
