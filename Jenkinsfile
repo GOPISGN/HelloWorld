@@ -20,5 +20,8 @@ pipeline {
             bat 'git clone https://github.com/GOPISGN/HelloWorld.git'
             bat 'cd HelloWorld'
             bat 'echo "Clonning Successful"'
+            }
+         }
+      
       }
    }
