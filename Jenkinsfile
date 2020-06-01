@@ -2,15 +2,11 @@ pipeline {
    agent any
      
    stages {
-      stage('Pre-Requistic') {
+      stage('Check Python Installed or not -- Pre-requestic') {
          steps {
-            script {
-               bat 'echo "Check python version"'
-               
-               bat 'echo off'
-               bat 'if "%python --version%" == "Python 3.8.2"' (
-                  bat echo "Python version is latest"
-                  )
+            bat echo 'Check Python Version'
+            python_version = bat 'python --version'
+            bat 'echo %python_version%'
                
                
             }
