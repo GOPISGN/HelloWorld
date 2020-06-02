@@ -6,7 +6,7 @@ pipeline {
 			steps {
 				bat 'echo off'
 				bat 'SET "current_directory"=%cd%'
-				ECHO 'current directoy "%current_directory%"'
+				bat  '''echo'current directoy "%current_directory%"''''
 				echo "Check Python Version"
 				bat 'python --version'
 				echo "Python latest version is installed, up and running"
