@@ -13,7 +13,7 @@ pipeline {
             }
         }
 		
-		stage('Parallel Stage') {
+		stage('Unit Test') {
 			parallel {
 				
 				stage('Stage 2 : Run the test for positive scenario') {
@@ -35,7 +35,7 @@ pipeline {
 				stage('Stage 4 : Run the test for exception') {
 					steps {
 						bat 'echo "Lets run the test for exception scenario"'
-						bat 'pytho Hello.py "string"'
+						bat 'python Hello.py "string"'
 						bat 'echo "Testcase for exception scenario is successful"'
 					}
 				}
