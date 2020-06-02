@@ -5,7 +5,7 @@ pipeline {
 		stage('Stage 1 : Check Python Installed or not -- Pre-requestic') {
 			steps {
 				bat 'echo off'
-				set "current_directory"=%cd%
+				bat 'set "current_directory"=%cd%'
 				echo 'current directoy "%current_directory%"'
 				echo "Check Python Version"
 				bat 'python --version'
