@@ -17,7 +17,7 @@ pipeline {
 		stage('Stage 3 : Run the Appliation') {
 			steps {
 				bat 'echo "Lets trigger the application"'
-				bat 'Hello.py'
+				bat 'python Hello.py'
 				bat 'echo "Application Run Successful"'
 			}
 		}
