@@ -1,7 +1,7 @@
 import sys
 
 if int(sys.argv[1]) < 0:
-    raise ValueError('Please provide a positive number for addition.')
+    raise ValueError('Please provide a positive number for printing Hello World.')
     
 print(f'Script Name is {sys.argv[0]}')
 
