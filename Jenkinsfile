@@ -5,9 +5,9 @@ pipeline {
 		stage('Stage 1 : Check Python Installed or not -- Pre-requestic') {
 			steps {
 				bat 'echo off'
-				bat 'echo "Check Python Version"'
-				bat 'python --version'
-				bat 'echo "Python latest version is installed, up and running"'
+				echo "Check Python Version"
+				python --version
+				echo "Python latest version is installed, up and running"
 				bat 'echo on'
                            
             }
