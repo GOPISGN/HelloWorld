@@ -6,7 +6,7 @@ pipeline {
 			steps {
 				bat 'echo off'
 				echo "Check Python Version"
-				python --version
+				bat 'python --version'
 				echo "Python latest version is installed, up and running"
 				bat 'echo on'
                            
